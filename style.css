@@ -1,17 +1,61 @@
+@media (max-width: 800px){
+    .user__list{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        padding: 0;
+    }
+}
+
+@media (min-width: 800px){
+    .user__list{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        padding: 0;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+:root{
+    --bgColorMain: #222831;
+    --bgColorSec: #FFD369;
+}
+
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Inconsolata', monospace;
+    background-color: var(--bgColorMain);
+    color: white;
+}
+
+::-webkit-scrollbar{
+    width: .3rem;
+    background: #393E46;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #EEEEEE;
+    border-radius: 1rem;
 }
 
 .navbar{
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0;
+    background-color: var(--bgColorSec);
+    color: black;
+    
 }
 
 .navbar h1:hover{
     cursor: pointer;
+    color: #EEEEEE;
 }
 
 .navbar div{
@@ -26,21 +70,27 @@ body{
     align-items: center;
     gap: 2rem;
     padding: 0;
-    
+    flex-wrap:wrap;
+    justify-content: space-evenly;
 }
 
 .nav__list_item:hover{
     cursor: pointer;
+    color: #EEEEEE;
+    font-size: 20px;
+    transition: 100ms;
 }
 
-.user__list{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    padding: 0;
+.nav__list_item{
+    transition: 100ms;
 }
 
 .list__item{
     list-style: none;
     text-align: center;
+    word-wrap: break-word;
+}
+
+.container{
+    width: 100%;
 }
