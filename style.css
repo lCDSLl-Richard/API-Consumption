@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+}
+
+.navbar h1:hover{
+    cursor: pointer;
+}
+
+.navbar div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+    
+}
+
+.nav__list_item:hover{
+    cursor: pointer;
+}
+
+.user__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 0;
+}
+
+.list__item{
+    list-style: none;
+    text-align: center;
+}
